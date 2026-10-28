@@ -103,7 +103,7 @@ export default function Wishlist() {
             </select>
             <input className="input" placeholder="Notas" value={notes} onChange={(e) => setNotes(e.target.value)} />
           </div>
-          <DiscogsSearch onPick={pick} buttonLabel="Añadir" />
+          <DiscogsSearch onPick={pick} buttonLabel="Añadir" showTracks />
         </div>
       )}
 
