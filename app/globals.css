@@ -14,3 +14,24 @@ body {
   color: #f5e9ff;
   min-height: 100vh;
 }
+
+@layer components {
+  .neon-card {
+    @apply rounded-2xl border border-neon-pink/60 bg-black/50 shadow-neon-pink transition hover:border-neon-cyan hover:shadow-neon-cyan;
+  }
+  .neon-btn {
+    @apply rounded-full border-2 border-neon-cyan px-4 py-2 font-semibold text-neon-cyan shadow-neon-cyan transition hover:bg-neon-cyan hover:text-night disabled:opacity-40;
+  }
+  .neon-btn-pink {
+    @apply rounded-full border-2 border-neon-pink px-4 py-2 font-semibold text-neon-pink shadow-neon-pink transition hover:bg-neon-pink hover:text-night disabled:opacity-40;
+  }
+  .input {
+    @apply w-full rounded-lg border border-neon-violet/60 bg-black/60 px-3 py-2 text-purple-50 placeholder:text-purple-300/40 focus:border-neon-cyan focus:outline-none;
+  }
+  .badge {
+    @apply rounded-full border border-neon-gold/70 px-2 py-0.5 text-xs text-neon-gold;
+  }
+  .sign {
+    @apply font-sign text-neon-pink drop-shadow-[0_0_8px_#ff2fb9];
+  }
+}
